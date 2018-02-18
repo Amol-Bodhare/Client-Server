@@ -33,6 +33,7 @@ public class Client
         try{
             line=br.readLine();
             while(line.compareTo("QUIT")!=0){
+                System.out.println("Message sent "+line);
                 os.println(line);
                 os.flush();
                 response=is.readLine();

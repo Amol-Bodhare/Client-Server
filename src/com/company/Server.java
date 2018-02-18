@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Server
 {
-    private static boolean isBathroomVacant=false;
+    private static boolean isBathroomVacant=true;
     public boolean getIsBathroomVacant() {
         return isBathroomVacant;
     }
@@ -88,7 +88,7 @@ class ServerThread extends Thread{
                 os.println(s.getIsBathroomVacant());
 
                 os.flush();
-                System.out.println("value of variable  :  ");
+                System.out.println("Bathroom is engaged  :  "+s.getIsBathroomVacant());
                 line=is.readLine();
             }
         } catch (IOException e) {
